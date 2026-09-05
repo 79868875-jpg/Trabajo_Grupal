@@ -1,9 +1,15 @@
 /* HEADER */
 #logo {
-    background-color: white;
-    border: 2px solid black;
-    float: left;
-    margin: 1em;
+    background: white;
+    padding: 0.5em;
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    border: 2px solid #D4A057;
+    transition: transform 0.3s ease;
+}
+
+#logo:hover {
+    transform: scale(1.05);
 }
 
 h1 {
@@ -13,30 +19,50 @@ h1 {
 }
 
 nav ul.navigation {
-    width: 5em;
-    float: right;
+    float: right;  /* ← Solo esto es suficiente */
     margin: 0;
+    padding: 0;
+    list-style: none;
 }
 
 nav ul.navigation li {
     background-color: white;
-    border-bottom-left-radius: .5em;
-    border-bottom-right-radius: .5em;
-    display: inline;
-    float: left;
-    padding: .25em 1em;
-    margin-right: .5em;
-}
-
-nav ul.navigation li a {
-    color: maroon;
-    font-size: .8em;
-    font-weight: bold;
-    text-decoration: none;
+    border-radius: .5em; 
+    display: inline-block;
+    padding: .5em 1.5em;
+    margin: 0 .3em;
+    transition: all 0.3s ease;
 }
 
 nav ul.navigation li:hover {
     background-color: maroon;
+}
+
+nav ul.navigation li:hover a {
+    color: white;
+}
+
+header {
+    background: linear-gradient(135deg, #8B0000 0%, #5C0000 100%);
+    padding: 1.5em 2em 0 2em;
+    border-bottom: 4px solid #D4A057;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* ESTILO PARA LOS ENLACES DEL MENÚ */
+
+nav ul.navigation li a {
+    color: maroon;
+    font-size: 1em;
+    font-weight: bold;
+    text-decoration: none;
+    font-family: "Alegreya Sans SC", Georgia, serif;
+}
+
+nav ul.navigation li:hover {
+    background-color: maroon;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(139, 0, 0, 0.3);
 }
 
 nav ul.navigation li:hover a {

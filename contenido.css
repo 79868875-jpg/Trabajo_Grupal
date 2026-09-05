@@ -1,6 +1,24 @@
 body {
     margin: 0;
-    background-color: #FFDD92;
+    background: linear-gradient(135deg, #F5E6C8 0%, #E8D5B8 100%);
+    font-family: 'Georgia', serif;
+    color: #2C1810;
+    line-height: 1.8;
+}
+
+div.content {
+    max-width: 1000px;
+    margin: 2em auto;
+    padding: 2em 3em;
+    background: rgba(255, 248, 240, 0.9);
+    border-radius: 15px;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+}
+
+div.content p {
+    text-align: justify;
+    font-size: 1.1em;
+    margin-bottom: 1.5em;
 }
 
 figure.hero {
@@ -19,13 +37,13 @@ figure.hero figcaption {
     text-align: right;
 }
 
-div.content {
-    margin: 2em;
-}
-
 div.content p:first-child::first-letter {
-    color: red;
-    font-size: 8em;
+    color: rgb(207, 7, 7);
+    font-size: 5em;
+    float: left;
+    line-height: 0.8;
+    margin-right: 0.1em;
+    font-family: "Stalemate", Georgia, serif;
     text-shadow: .125em .125em lightgray;
 }
 
@@ -36,6 +54,28 @@ div.content p:first-child::first-line {
     line-height: 1em;
 }
 
-div.content p+p::first-letter {
-    font-size: 2em;
+/* ESTILO PARA IMÁGENES EN EL CONTENIDO */
+div.content figure.content-image {
+    float: right;
+    margin: 0 0 1em 1.5em;
+    max-width: 300px;
+    border: 3px solid #D4A057;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    padding: 0.5em;
+    background: white;
+}
+
+div.content figure.content-image img {
+    width: 100%;
+    display: block;
+    border-radius: 8px;
+}
+
+div.content figure.content-image figcaption {
+    text-align: center;
+    font-size: 0.85em;
+    color: #5C0000;
+    padding: 0.5em 0 0 0;
+    font-style: italic;
 }
