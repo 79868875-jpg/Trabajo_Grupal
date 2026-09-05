@@ -1,0 +1,44 @@
+/* HEADER */
+#logo {
+    background-color: white;
+    border: 2px solid black;
+    float: left;
+    margin: 1em;
+}
+
+h1 {
+    float: left;
+    font-size: 1.75em;
+    font-family: "Alegreya Sans SC", Georgia, serif;
+}
+
+nav ul.navigation {
+    width: 5em;
+    float: right;
+    margin: 0;
+}
+
+nav ul.navigation li {
+    background-color: white;
+    border-bottom-left-radius: .5em;
+    border-bottom-right-radius: .5em;
+    display: inline;
+    float: left;
+    padding: .25em 1em;
+    margin-right: .5em;
+}
+
+nav ul.navigation li a {
+    color: maroon;
+    font-size: .8em;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+nav ul.navigation li:hover {
+    background-color: maroon;
+}
+
+nav ul.navigation li:hover a {
+    color: white;
+}

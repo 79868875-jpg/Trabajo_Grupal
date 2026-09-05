@@ -1,0 +1,41 @@
+body {
+    margin: 0;
+    background-color: #FFDD92;
+}
+
+figure.hero {
+    margin: 0;
+}
+
+figure.hero img {
+    border-bottom: .5em solid white;
+    border-top: .5em solid white;
+    width: 100%;
+}
+
+figure.hero figcaption {
+    font-size: .8em;
+    padding-right: 1em;
+    text-align: right;
+}
+
+div.content {
+    margin: 2em;
+}
+
+div.content p:first-child::first-letter {
+    color: red;
+    font-size: 8em;
+    text-shadow: .125em .125em lightgray;
+}
+
+div.content p:first-child::first-line {
+    color: maroon;
+    font-family: "Stalemate", Georgia, serif;
+    font-size: 2.5em;
+    line-height: 1em;
+}
+
+div.content p+p::first-letter {
+    font-size: 2em;
+}
