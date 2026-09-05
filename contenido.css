@@ -23,6 +23,7 @@ div.content p {
 
 figure.hero {
     margin: 0;
+    text-align: center;
 }
 
 figure.hero img {
@@ -35,6 +36,7 @@ figure.hero figcaption {
     font-size: .8em;
     padding-right: 1em;
     text-align: right;
+    color: white;
 }
 
 div.content p:first-child::first-letter {

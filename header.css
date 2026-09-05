@@ -6,6 +6,7 @@
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     border: 2px solid #D4A057;
     transition: transform 0.3s ease;
+    text-align: center;
 }
 
 #logo:hover {
